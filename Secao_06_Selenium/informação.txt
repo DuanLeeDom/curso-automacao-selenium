@@ -1,0 +1,13 @@
+baixar o Selenum
+site: https://pypi.org/project/selenium/
+codigo no CMD: pip install selenium
+
+baixar o webdriver-manager
+site: https://pypi.org/project/webdriver-manager/
+codigo no CMD: pip install webdriver-manager
+
+código.py
+webdrive.exe v10
+
+chrome v11 - da erro
+caso esteja na v10 - vai dar certo
