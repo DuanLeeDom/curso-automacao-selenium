@@ -1,5 +1,5 @@
 # Aprendizado - Automatize suas Redes Sociais com Selenium + Python Básico
-Aulas com o rofessor Porcino
+Aulas com o professor Porcino
 site: [professorporcino.com.br](https://professorporcino.com.br/)
 
 ## Material do Curso
