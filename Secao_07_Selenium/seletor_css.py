@@ -30,18 +30,17 @@ elemento = driver.find_element(By.CLASS_NAME, 'information')
 # find_element é o primeiro a ser encontrado.
 print(elemento)
 elemento.send_keys('Esse é meu texto!')
-time.sleep(3)
+time.sleep(2)
 elemento.clear()  # Corrigido: falta de parênteses para chamar o método
 
 # lista de elementos | Busca
 
 # CLASS_NAME
-time.sleep(2)
 elementos = driver.find_elements(By.CLASS_NAME, 'information')
 print(elementos)
 elementos[0].send_keys('Este é o 1º elemento da classe information')
 elementos[1].send_keys('Este é o 2º elemento da classe information')
-
+time.sleep(2)
 
 # CSS_SELECTOR
 inputname = driver.find_element(By.CSS_SELECTOR, '#fname') 
@@ -49,12 +48,25 @@ valorinputname = inputname.get_attribute('value')
 print(valorinputname)
 
 # ID
+time.sleep(2)
 inputsobrenome = driver.find_element(By.ID, 'lname')
 valorinputname = inputsobrenome.get_attribute('value')
 print(valorinputname)
 
 # name newsletter
+time.sleep(2)
 novidades = driver.find_element(By.NAME, 'newsletter')
 novidades.click()
+
+# xpath
+time.sleep(2)
+checkfeminino = driver.find_element(By.XPATH, '/html/body/form/span[2]/input') # "//input[@value='f']"
+checkfeminino.click()
+
+# link text
+time.sleep(2)
+ancora = driver.find_element(By.LINK_TEXT, 'Página Oficial do Selenium')
+ancora.click()
+time.sleep(2)
 
 time.sleep(5)
