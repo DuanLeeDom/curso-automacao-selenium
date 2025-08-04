@@ -1,0 +1,16 @@
+import time
+import os
+import sys
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
+
+chrome_options = (Options)
+main_directory = os.path.join(sys.path[0])
+chrome_driver_path = ChromeDriverManager().install()
+
+service = Service(executable_path=chrome_driver_path)
+driver = webdriver.chrome( service=service , options=chrome_options)
+
+driver.get('https://www.selenium.dev/')

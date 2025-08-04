@@ -1,2 +1,0 @@
-código abaixo tem que ser executado no PowerShell:
-python -c 'import selenium; print(selenium.__version__)'
